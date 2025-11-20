@@ -14,11 +14,10 @@ main {
     margin-bottom: 50px;
 }
 
-/* body {
-  background-color: #FAF3E8;
-} */
 
 /* SHARED */
+
+/* NAV */
 
 header, .navbar {
   background-color: #FAF3E8; }
@@ -34,6 +33,7 @@ header, .navbar {
       }
         .active {
             border-bottom: 3px solid #0B5538;
+            color:#BD9941!important;
         }
 
     .navbar-brand:hover {
@@ -44,6 +44,7 @@ header, .navbar {
 
 .navbar-nav li a:hover {
     transform: scale(1.1);
+    color: #BD9941;
     border-bottom: 3px solid #0B5538;
     transition: all 0.5s;
 }
@@ -53,6 +54,106 @@ nav span {
     font-family: "Cormorant Garamond", serif;
     color: #0B5538;
 }
+
+.nav-link {
+  color: #0B5538;
+}
+
+
+/* FOOTER */
+
+footer {
+  color: white;
+  background-color: #0B5538;
+  width: 100%;
+  margin-bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 0; }
+  footer p {
+    font-size: 1rem;
+    text-align: center;
+    padding-top: 10px;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400; }
+  footer .footerSecciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 33%;
+    height: 80%;
+    font-family: "Cormorant Garamond", serif; }
+    footer .footerSecciones a {
+      font-size: 3rem;
+      padding: 0 10px;
+      color: white; }
+      footer .footerSecciones a i:hover {
+        transform: scale(1.1);
+        transition: all 0.5s; }
+    footer .footerSecciones h3 {
+      font-size: 1.2rem;
+      font-family: "Cormorant Garamond", serif;
+      text-align: center;
+      font-weight: 400;
+      padding-top: 20px;
+      line-height: 30px; }
+
+
+/* BOTON WSP */
+
+.botonWsp {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  border-color: #1ad03f; }
+  .botonWsp a {
+    font-size: 2.5rem;
+    color: white; }
+  .botonWsp .btn {
+    background-color: #1ad03f;
+    border-color: #1ad03f;
+    border-radius: 50%;
+    filter: drop-shadow(5px 5px 10px #2c2c2c); }
+
+.btn:hover {
+  transform: scale(1.1);
+  transition: all 0.5s; }
+
+/* MEDIA QUERIES COMPARTIDAS */
+
+@media screen and (max-width: 768px) {
+  html {
+    overflow-x: hidden; }
+  nav span {
+    font-size: 1rem; }
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .navbar-nav li:hover {
+    transform: scale(1); }
+  .subtitulos {
+    margin: 25px 0; }
+    .subtitulos h2 {
+      font-family: "Cormorant Garamond", serif;
+      font-weight: 500;
+      font-size: 1.2rem;
+      text-align: center;
+      padding: 8px 0; }
+  footer {
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column; }
+    footer .footerSecciones {
+      width: 100%; }
+    footer p {
+      font-size: 0.8rem; } }
 
 
 /* INICIO */
@@ -134,100 +235,6 @@ h4 {
     font-family: "Open Sans", sans-serif;
 }
 
-/* FOOTER */
-
-footer {
-  color: white;
-  background-color: #0B5538;
-  width: 100%;
-  margin-bottom: 0;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  margin-right: 0;
-  margin-left: 0;
-  margin-bottom: 0; }
-  footer p {
-    font-size: 1rem;
-    text-align: center;
-    padding-top: 10px;
-    font-family: "Cormorant Garamond", serif;
-    font-weight: 400; }
-  footer .footerSecciones {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 33%;
-    height: 80%;
-    font-family: "Cormorant Garamond", serif; }
-    footer .footerSecciones a {
-      font-size: 3rem;
-      padding: 0 10px;
-      color: white; }
-      footer .footerSecciones a i:hover {
-        transform: scale(1.1);
-        transition: all 0.5s; }
-    footer .footerSecciones h3 {
-      font-size: 1.2rem;
-      font-family: "Cormorant Garamond", serif;
-      text-align: center;
-      font-weight: 400;
-      padding-top: 20px;
-      line-height: 30px; }
-
-
-/* BOTON WSP */
-
-.botonWsp {
-  position: fixed;
-  right: 30px;
-  bottom: 30px;
-  border-color: #1ad03f; }
-  .botonWsp a {
-    font-size: 2.5rem;
-    color: white; }
-  .botonWsp .btn {
-    background-color: #1ad03f;
-    border-color: #1ad03f;
-    border-radius: 50%;
-    filter: drop-shadow(5px 5px 10px #2c2c2c); }
-
-.btn:hover {
-  transform: scale(1.1);
-  transition: all 0.5s; }
-
-/* MEDIA QUERIES COMPARTIDAS */
-@media screen and (max-width: 768px) {
-  html {
-    overflow-x: hidden; }
-  nav span {
-    font-size: 1rem; }
-  .navbar-nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; }
-  .navbar-nav li:hover {
-    transform: scale(1); }
-  .subtitulos {
-    margin: 25px 0; }
-    .subtitulos h2 {
-      font-family: "Cormorant Garamond", serif;
-      font-weight: 500;
-      font-size: 1.2rem;
-      text-align: center;
-      padding: 8px 0; }
-  footer {
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column; }
-    footer .footerSecciones {
-      width: 100%; }
-    footer p {
-      font-size: 0.8rem; } }
-
 
 /* VALORES */
 
@@ -237,4 +244,10 @@ footer {
 
 .card li {
   background-color: #FAF3E8;
+}
+
+/* CONTACTO */
+
+.contacto {
+  font-family: "Open Sans", sans-serif;
 }
