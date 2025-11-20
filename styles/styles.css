@@ -251,3 +251,7 @@ h4 {
 .contacto {
   font-family: "Open Sans", sans-serif;
 }
+
+iframe{
+  width: 90%;
+}
